@@ -1,4 +1,4 @@
-var table = document.body.children[2].children[1];
+var table = document.body.children[0].children[1];
 console.log(table);
 table.rows[1].cells[0].innerHTML = 'window.location.href';
 table.rows[1].cells[1].innerHTML = window.location.href;
