@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Belarus",
+    "population": "9466000",
+    "code": "+375",
+    "flag":"belarus.jpg"
+  },
+  {
+    "name": "Poland",
+    "population": "38530000",
+    "code": "+48",
+    "flag":"poland.jpg"
+  },
+  {
+    "name": "Ukraine",
+    "population": "45490000",
+    "code": "+380",
+    "flag":"ukraine.jpg"
+  },
+  {
+    "name": "Russia",
+    "population": "143500000",
+    "code": "+7",
+    "flag":"russia.jpg"
+  },
+  {
+    "name": "Germany",
+    "population": "806200000",
+    "code": "+49",
+    "flag":"germany.jpg"
+  }
+]
