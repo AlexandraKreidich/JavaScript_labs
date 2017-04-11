@@ -56,7 +56,7 @@ function unCode() {
     }
     res = res.toLowerCase();
     console.log(res);
-    input.setAttribute('value', res);
+    outCode.setAttribute('value', res);
     btn.removeAttribute('disabled');
     unbtn.setAttribute('disabled', 'true');
 }
@@ -66,6 +66,7 @@ function onFocusForm() {
         btn.removeAttribute('disabled');
     }
 }
+var outCode = document.getElementById('outCode');
 var input = document.getElementById('input');
 var btn = document.getElementById('code');
 var out = document.getElementById('output');
