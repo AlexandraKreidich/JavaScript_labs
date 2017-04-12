@@ -54,7 +54,8 @@ function calculate() {
     var n = Number(input.value);
     input.setAttribute('value', '');
     var output = document.getElementById('output');
-    var res = null;
+    var res = 0;
+    if (!op) op = '?';
     switch (op) {
         case '+':
             res = tmp + n;
@@ -67,6 +68,9 @@ function calculate() {
             break;
         case '/':
             res = (tmp / n).toFixed(5);
+            break;
+        case '?':
+            res = n;
             break;
     }
     output.setAttribute('value', res);
