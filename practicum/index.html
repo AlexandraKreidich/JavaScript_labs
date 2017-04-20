@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="container">
+                <form class="navbar-form navbar-left" name='search'>
+                    <input name='key' type="text" class="form-control" placeholder="ключевые слова" value='' />
+                    <label class="form-controll">Категории: </label>
+                    <select name='select' class="form-control" id="categories">
+                      <<option value="все" selected>все</option>
+                    </select>
+                    <label class="form-controll">Цена от: </label>
+                    <input name='from' class="form-control" type="number" value="0">
+                    <label class="form-controll">до: </label>
+                    <input name='to' class="form-control" type="number" value="100">
+                    <input type='button' name='searchButton' class="btn btn-success" value="Поиск"></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class='container btn-group'>
+        <div class="btn-group-vertical" id='btn-group-vert'>
+            <input type="button" class="btn btn-default" value='все'></input>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class='row' id='items'>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

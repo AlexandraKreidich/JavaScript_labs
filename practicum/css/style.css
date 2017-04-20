@@ -1,0 +1,12 @@
+.col-md-4{
+  min-height: 600px;
+}
+.form-control{
+  margin-right: 20px;
+}
+.btn{
+  width: 100px;
+}
+.btn-group{
+  position: fixed;
+}
