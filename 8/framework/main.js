@@ -34,28 +34,28 @@ var Framework = {
             e.dispatchEvent(ev);
         }
     },
-    getById: function (id) {
+    get ById(id) {
       return (document.getElementById(id));
     },
-    getByClass: function (className) {
+    get ByClass(className) {
       return (document.getElementsByClassName(className));
     },
-    getByTag: function (tag) {
+    get ByTag(tag) {
       return(document.getElementsByTagName(tag));
     },
-    getBySelector: function (selector) {
+    get BySelector(selector) {
       return(document.querySelector(selector));
     },
-    getBySelectorAll: function (selector) {
+    get BySelectorAll(selector) {
       return(document.querySelectorAll(selector));
     },
-    getWidth: function () {
+    width: function () {
       return (this.getBoundingClientRect().right - this.getBoundingClientRect().left);
     },
-    getHeight: function () {
+    height: function () {
       return (this.getBoundingClientRect().bottom - this.getBoundingClientRect().top);
     },
-    getPageTop: function (elem) {
+    pageTop: function (elem) {
       var length = 0;
       while(elem.offsetParent != null){
         length += elem.offsetTop;
@@ -63,4 +63,21 @@ var Framework = {
       }
       return length;
     },
+    pageLeft: function(elem){
+		var length = 0;
+		while(elem.offsetParent!= null){
+			length = elem.offsetLeft;
+			e = elem.offsetParent;
+		}
+		return length;
+	},
+  css: function(elem, prop, val){
+    if(arguments.length == 2){
+      var style = window.getComputedStyle(elem);
+      return style[prop];
+    }
+    if(argumants.length == 3){
+      elem.style[prop] = val;
+    }
+  }
 };
