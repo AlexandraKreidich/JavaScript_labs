@@ -24,3 +24,5 @@ FoodProduct.prototype.constructor = FoodProduct;
 
 var a = new FoodProduct("eggs", 10000, "Apr 4, 2017", "Apr 14, 2017", 10);
 console.log(a);
+a.store = 11;
+console.log(a);

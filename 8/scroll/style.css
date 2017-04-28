@@ -8,9 +8,9 @@
 
 .absolute {
     width: 100px;
-    height: 50px;
+    height: 150px;
     background-color: maroon;
-    position: absolute;
+    position: relative;
     top: 3000px;
 }
 .fixed{
