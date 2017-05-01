@@ -6,12 +6,19 @@
     position: relative;
 }
 
-.absolute {
+.absolute-top {
     width: 100px;
-    height: 150px;
+    height: 300px;
     background-color: maroon;
     position: relative;
     top: 3000px;
+}
+.absolute-bottom{
+  width: 100px;
+  height: 300px;
+  background-color: maroon;
+  position: relative;
+  top: 7000px;
 }
 .fixed{
   position: fixed;

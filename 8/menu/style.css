@@ -14,27 +14,33 @@ ul {
     list-style: none;
     background-color: #f5f2f0;
 }
+
 ul:after {
     display: block;
     content: ' ';
     clear: both;
     float: none;
 }
-ul.menu > li {
+
+li {
     position: relative;
 }
-ul.menu > li > a {
+
+ul.menu>li>a {
     display: block;
     padding: 10px;
     color: maroon;
     text-decoration: none;
 }
-ul.menu > li > a:hover {
+
+ul.menu>li>a:hover {
     background-color: maroon;
 }
-ul.menu > li > a:hover {
+
+ul.menu>li>a:hover {
     color: #f5f2f0;
 }
+
 .submenu {
     display: none;
     position: absolute;
@@ -43,19 +49,32 @@ ul.menu > li > a:hover {
     left: 150px;
     background-color: #f5f2f0;
 }
-ul.submenu > li {
+
+.submenu-second {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 0;
+    left: 120px;
+    background-color: #f5f2f0;
+}
+
+ul.submenu>li {
     display: block;
 }
-ul.submenu > li > a {
+
+ul.submenu>li>a {
     display: block;
     padding: 10px;
     color: maroon;
     text-decoration: none;
 }
-ul.submenu > li > a:hover {
+
+ul.submenu>li>a:hover {
     background-color: maroon;
     color: #f5f2f0;
 }
-.display-sub-menu{
-  display: block;
+
+.display-submenu {
+    display: block;
 }
