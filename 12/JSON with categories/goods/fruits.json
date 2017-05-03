@@ -1,0 +1,26 @@
+[{
+        "id": 20,
+        "name": "pear",
+        "price": 12
+    },
+    {
+        "id": 21,
+        "name": "peach",
+        "price": 13
+    },
+    {
+        "id": 22,
+        "name": "apple",
+        "price": 1
+    },
+    {
+        "id": 23,
+        "name": "pine-apple",
+        "price": 19
+    },
+    {
+        "id": 24,
+        "name": "banana",
+        "price": 16
+    }
+]
