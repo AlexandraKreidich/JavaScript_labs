@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.basket {
+    position: fixed;
+    width: 200px;
+    height: 150px;
+}
