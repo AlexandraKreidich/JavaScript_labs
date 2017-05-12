@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><input type='button' class='nav-btn btn btn-default' value='Bold' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='Underline' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='Coursive' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='A+' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='A-' /></li>
+                <li><p class='nav-text'> Font size: </p></li>
+                <li class="select">
+                    <select class="form-control" id="selectSize">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                    </select>
+                </li>
+                <li><p class='nav-text'> Font: </p></li>
+                <li class="select">
+                    <select class="form-control" id="selectFont">
+                      <option>Arial Black</option>
+                      <option>Arial</option>
+                      <option>Courier New</option>
+                      <option>Comic Sans MS</option>
+                      <option>Georgia</option>
+                      <option>Impact</option>
+                      <option>Times New Roman</option>
+                      <option>Trebuchet MS</option>
+                      <option>Verdana</option>
+                    </select>
+                </li>
+                <li><input type='button' class='nav-btn btn btn-default' value='-' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='ul' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='ol' /></li>
+                <li><p class='nav-text'> Font color: </p></li>
+                <li><input type='color' class='color-select' value='#6495ED' id='selectColorText'/></li>
+                <li><p class='nav-text'> Background color: </p></li>
+                <li><input type='color' class='color-select' value='#6495ED' id='selectColorBg'/></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='-->' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='<--' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='<->' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='>-<' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='✎' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='space+' /></li>
+                <li><input type='button' class='nav-btn btn btn-default' value='space-' /></li>
+            </ul>
+        </div>
+    </nav>
+    <div class='container content' id='container'>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

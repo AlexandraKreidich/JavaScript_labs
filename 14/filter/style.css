@@ -1,0 +1,15 @@
+.container{
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+#inverse{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+}
+#img{
+  display: none;
+}

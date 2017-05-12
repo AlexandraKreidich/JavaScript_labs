@@ -1,0 +1,22 @@
+.navbar-nav{
+  margin-top: 10px;
+}
+.nav-btn{
+  margin-right: 3px;
+  height: 30px;
+}
+.select{
+  margin-right: 10px;
+}
+.color-select{
+  margin-right: 10px;
+  height: 30px;
+}
+.nav-text{
+  margin-top: 6px;
+  margin-right: 10px;
+}
+.content{
+  height: 400px;
+  background-color: whitesmoke;
+}

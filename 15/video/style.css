@@ -1,0 +1,45 @@
+body{
+    background-color: whitesmoke;
+    color: #2F4F4F;
+}
+video{
+  margin: 0 auto;
+  display: block;
+}
+.controls{
+  width: 440px;
+  height: 30px;
+  background-color: #e7f1e5;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid black;
+}
+.g{
+  font-size: 18px;
+  vertical-align: top;
+  margin-left: 2px;
+}
+input[type=range] {
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+.time{
+  width: 150px;
+  border: 1px solid #2F4F4F;
+  display: inline-block;
+  vertical-align: middle;
+  height: 13px;
+  padding: 0;
+}
+.time>div{
+  height: 12px;
+  width: 0px;
+  background-color: #2F4F4F;
+}
+.time-numbers{
+  display: inline-block;
+  margin-left: 3px;
+}

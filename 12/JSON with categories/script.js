@@ -3,7 +3,7 @@ var showGoods = function(arr) {
     var div = document.getElementById('goods');
     var str = '<ul>';
     arr.forEach(function(elem) {
-        str += '<li><p>mane: ' + elem.name + '</p><p>price: ' + elem.price + '</p></li><input type="number" value="1" id="number"><input type="button" value="add" class="addBtn" data-id="' + elem.id + '"></form>';
+        str += '<li><p>name: ' + elem.name + '</p><p>price: ' + elem.price + '</p></li><input type="number" value="1" id="number"><input type="button" value="add" class="addBtn" data-id="' + elem.id + '"></form>';
     });
     str += '</ul>';
     div.innerHTML = str;
@@ -12,18 +12,47 @@ var showGoods = function(arr) {
 
 var addToBasket = function(e) {
     var id = (e.target).getAttribute('data-id');
-    var amount = e.target.previousElementSibling.value;
+    var amount = Number(e.target.previousElementSibling.value);
     var basket = document.getElementById('basket');
+    var elements = document.getElementsByClassName('basket-element');
+    console.log(elements);
     for (var el in goods) {
         if (goods[el].id == id) {
             var name = goods[el].name;
-            var price = amount * goods[el].price;
+            var price = goods[el].price;
         }
     }
-    var str = "<p>" + name + ": " + amount + "</p><p>price: " + price + "</p>";
-    var p = document.createElement(p);
-    p.innerHTML = str;
-    basket.appendChild(p);
+    var flag = 1;
+    var regexp = /.{7}([0-9]+)/;
+    if (elements.length != 0) {
+        [].forEach.call(elements, function(el) {
+            if (el.firstElementChild.innerText == name) {
+              var am = el.children[1].innerText;
+              var result = am.match(regexp);
+              console.log()
+              amount +=Number(result[1]);
+              price *= amount;
+                var str = "<p>" + name + "</p><p>Amount: " + amount + "</p><p>Price: " + price + "</p>";
+                el.innerHTML = str;
+                flag = 0;
+            }
+        });
+        if (flag == 1) {
+            price *= amount;
+            var str = "<p>" + name + "</p><p>Amount: " + amount + "</p><p>Price: " + price + "</p>";
+            var div = document.createElement('div');
+            div.classList.add('basket-element');
+            div.innerHTML = str;
+            basket.appendChild(div);
+        }
+    } else {
+        price *= amount;
+        var str = "<p>" + name + "</p><p>Amount: " + amount + "</p><p>Price: " + price + "</p>";
+        var div = document.createElement('div');
+        div.classList.add('basket-element');
+        div.innerHTML = str;
+        basket.appendChild(div);
+    }
 }
 
 

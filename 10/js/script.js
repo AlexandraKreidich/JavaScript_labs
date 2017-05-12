@@ -45,20 +45,16 @@ function Shop(name, adress, markup, income) {
         });
     };
     this.deleteProduct = function(prodName, am) {
-        var price = 0;
         this.products = this.products.filter(function(elem) {
             if (elem.product.name == prodName) {
                 if (elem.ammount <= am) {
-                    price = elem.product.price * elem.ammount;
                     return false;
                 } else {
                     elem.ammount -= am;
-                    price = elem.product.price * am;
                 }
             }
             return true;
         });
-        this.income -= price;
     };
     this.cellProduct = function(prodName, am) {
         var price = 0;
@@ -200,7 +196,9 @@ var Market = {
                         str += '<input type="number" class="amount" value="1" min="1" max="' + el.ammount + '" ><input type="button" class="b" value="cell" data-id="' + el.product.id + '"><input type="button" class="b" value="delete" data-id="' + el.product.id + '">'
                     };
                 });
-            };
+            } else{
+              Market.showProductsForShop(shop);
+            }
         });
         str += '</div>';
         div.innerHTML = str;
@@ -232,9 +230,8 @@ var Market = {
                         var div = document.getElementById('statistics');
                         div.innerHTML = elem.toString;
                     }
-                })
-
-
+                });
+                Market.showInfoAboutProduct(shop, prodName);
             });
         });
     }
