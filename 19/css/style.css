@@ -1,0 +1,14 @@
+body {
+    background-color: whitesmoke;
+    color: #2F4F4F;
+}
+
+.container {
+    height: 500px;
+    width: 100%;
+}
+
+.alert{
+  font-size: 17px;
+  text-align: center;
+}

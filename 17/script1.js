@@ -14,7 +14,10 @@ var app = {
         var img = document.getElementById('img');
         app.canvas.width = img.width;
         app.canvas.height = img.width;
-        app.ctx.drawImage(img, 0, 0);
+        img.onload = function(){
+            app.ctx.drawImage(img, 0, 0);
+        }
+
 
         var btn = document.getElementById('inverse');
         btn.addEventListener('click', app.filterBtn);
@@ -28,6 +31,7 @@ var app = {
     },
 
     onDrop: function(e) {
+        console.log(1)
         app.prevent(e);
 
         var file = e.dataTransfer.files[0];
@@ -38,9 +42,10 @@ var app = {
             src = reader.result;
             var img = document.getElementById('img');
             img.setAttribute('src', src);
+            app.initCanvas();
         }
         reader.readAsDataURL(file);
-        app.initCanvas();
+
     },
 
     prevent: function(e) {
