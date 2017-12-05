@@ -1,1 +1,1 @@
-# Working_With_JS
+# JavaScript labs
